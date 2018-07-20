@@ -1,4 +1,4 @@
-package com.neo.controller;
+package com.lyhq.controller;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -11,17 +11,16 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import static org.hamcrest.Matchers.equalTo;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import com.lyhq.controller.HelloWorldController;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class HelloTests {
+public class HelloWorldControlerTests {
 
-	
     private MockMvc mvc;
 
     @Before
@@ -32,8 +31,9 @@ public class HelloTests {
     @Test
     public void getHello() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello World")));
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andDo(MockMvcResultHandlers.print())
+                .andReturn();
     }
 
 }
