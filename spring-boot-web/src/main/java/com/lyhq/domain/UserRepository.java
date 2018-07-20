@@ -1,4 +1,4 @@
-package com.neo.domain;
+package com.lyhq.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

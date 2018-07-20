@@ -1,4 +1,4 @@
-package com.neo.web;
+package com.lyhq.web;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.neo.domain.User;
-import com.neo.domain.UserRepository;
+import com.lyhq.domain.User;
+import com.lyhq.domain.UserRepository;
 
 @RestController
 public class UserController {

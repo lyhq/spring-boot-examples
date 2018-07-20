@@ -1,4 +1,4 @@
-package com.neo.web;
+package com.lyhq.web;
 
 import java.util.Locale;
 import java.util.UUID;

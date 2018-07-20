@@ -1,4 +1,4 @@
-package com.neo.web;
+package com.lyhq.web;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,26 +8,23 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import com.neo.Application;
-import com.neo.util.NeoProperties;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import com.lyhq.util.LyhqProperties;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ProPertiesTest {
-
 	
 	@Autowired
-    private NeoProperties neoProperties;
+    private LyhqProperties lyhqProperties;
 
 
     @Test
     public void getHello() throws Exception {
-    	System.out.println(neoProperties.getTitle());
-        Assert.assertEquals(neoProperties.getTitle(), "纯洁的微笑");
-        Assert.assertEquals(neoProperties.getDescription(), "分享生活和技术");
+    	System.out.println(lyhqProperties.getTitle());
+        Assert.assertEquals(lyhqProperties.getTitle(), "纯洁的微笑");
+        Assert.assertEquals(lyhqProperties.getDescription(), "分享生活和技术");
     }
 
     

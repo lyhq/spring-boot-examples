@@ -1,14 +1,14 @@
-package com.neo.util;
+package com.lyhq.util;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class NeoProperties {
+public class LyhqProperties {
 	
-	@Value("${com.neo.title}")
+	@Value("${com.lyhq.title}")
 	private String title;
-	@Value("${com.neo.description}")
+	@Value("${com.lyhq.description}")
 	private String description;
 	public String getTitle() {
 		return title;

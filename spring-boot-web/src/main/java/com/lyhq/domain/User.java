@@ -1,4 +1,4 @@
-package com.neo.domain;
+package com.lyhq.domain;
 
 import java.io.Serializable;
 
