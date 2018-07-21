@@ -1,7 +1,6 @@
+package com.lyhq.repository;
 
-package com.neo.repository;
-
-import com.neo.model.Message;
+import com.lyhq.model.Message;
 
 public interface MessageRepository {
 

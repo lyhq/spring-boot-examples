@@ -1,13 +1,10 @@
-
-
-package com.neo.repository;
-
-import com.neo.model.Message;
+package com.lyhq.repository;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicLong;
 
+import com.lyhq.model.Message;
 
 public class InMemoryMessageRepository implements MessageRepository {
 

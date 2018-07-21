@@ -1,4 +1,4 @@
-package com.neo.model;
+package com.lyhq.model;
 
 import java.util.Calendar;
 

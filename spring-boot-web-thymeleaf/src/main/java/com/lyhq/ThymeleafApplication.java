@@ -16,16 +16,16 @@
  * 本示例参数于：
  * https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-web-ui
  */
-package com.neo;
+package com.lyhq;
 
-import com.neo.model.Message;
-import com.neo.repository.InMemoryMessageRepository;
-import com.neo.repository.MessageRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.convert.converter.Converter;
 
+import com.lyhq.model.Message;
+import com.lyhq.repository.InMemoryMessageRepository;
+import com.lyhq.repository.MessageRepository;
 
 @SpringBootApplication
 public class ThymeleafApplication {
