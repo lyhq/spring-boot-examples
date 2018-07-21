@@ -1,7 +1,8 @@
-package com.neo.repository;
+package com.lyhq.repository;
 
-import com.neo.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.lyhq.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 

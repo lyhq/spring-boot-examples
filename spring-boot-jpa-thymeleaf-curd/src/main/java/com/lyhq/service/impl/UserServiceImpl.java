@@ -1,13 +1,13 @@
-package com.neo.service.impl;
+package com.lyhq.service.impl;
 
-import com.neo.entity.User;
-import com.neo.repository.UserRepository;
-import com.neo.service.UserService;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.lyhq.entity.User;
+import com.lyhq.repository.UserRepository;
+import com.lyhq.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService{

@@ -1,8 +1,8 @@
-package com.neo.service;
-
-import com.neo.entity.User;
+package com.lyhq.service;
 
 import java.util.List;
+
+import com.lyhq.entity.User;
 
 public interface UserService {
 
