@@ -19,7 +19,6 @@ public class ProPertiesTest {
 	@Autowired
     private LyhqProperties lyhqProperties;
 
-
     @Test
     public void getHello() throws Exception {
     	System.out.println(lyhqProperties.getTitle());

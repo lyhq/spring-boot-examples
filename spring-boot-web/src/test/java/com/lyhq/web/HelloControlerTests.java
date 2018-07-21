@@ -34,14 +34,12 @@ public class HelloControlerTests {
                 .andDo(MockMvcResultHandlers.print())
                 .andReturn();
     }
-    
-    
 
     @Test
     public void testHello() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello World")));
+                .andExpect(content().string(equalTo("hello world")));
     }
 
 
